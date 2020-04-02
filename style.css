@@ -190,7 +190,7 @@ header .page_accueil_titre h2 {
 
 /* Section Reasons */
 #section_reasons {
-    height: 60vh;
+    height: 70vh;
     background-color:#84c99d;
 }
 
@@ -227,9 +227,6 @@ header .page_accueil_titre h2 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
-
-#section_buy {
     padding-left: 10%;
 }
 
@@ -239,18 +236,6 @@ header .page_accueil_titre h2 {
 
 #section_buy .section_buy_team {
     width: 90%;
-}
-
-#section_buy .section_buy_solo .section_buy_solo_legacy {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    border-radius: 7px;
-    background-color: #e2e1e4;
-    font-size: 12px;    
 }
 
 #section_buy,
@@ -269,6 +254,20 @@ p {
     padding-bottom: 4%;
     font-size: 9px;
 }
+
+#section_buy .section_buy_solo .section_buy_solo_legacy {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #e2e1e4;
+    font-size: 12px;    
+}
+
+
 
 #section_buy .section_buy_solo .section_buy_solo_9 {
     border: 0;
@@ -304,6 +303,19 @@ p {
     border-radius: 7px;
     background-color: #7ecc9a;
     font-size: 12px; 
+}
+
+#section_buy,
+ .section_buy_solo,
+ .section_buy_team,
+ .section_buy_solo_applewindow_image {
+    fill: #c4c4c4;
+}
+
+#section_buy .section_buy_solo, 
+.section_buy_team, 
+.section_buy_solo_applewindow {
+    padding-top: 10px;
 }
 
 /* Footer */
