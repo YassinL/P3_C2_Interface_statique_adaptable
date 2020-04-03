@@ -8,9 +8,22 @@
 @font-face {
     font-family: "Open Sans";
     font-weight: 500 600;
-    src: url(/assets/font/OpenSans-Regular.ttf);
+    src: url(./assets/font/Open_Sans/OpenSans-Regular.ttf);
 }
+
+@font-face {
+    font-family: "Open Sans bold";
+    font-weight: 500 600;
+    src: url(./assets/font/Open_Sans/OpenSans-Bold.ttf);
+}
+
 /* Header  */
+
+body {
+    font-family: "Open Sans";
+}
+
+
 header {
     background: url(./Images/mastehead.jpg) no-repeat center/ cover;
     height: 70vh;
@@ -149,7 +162,7 @@ header .page_accueil_titre h2 {
 /* Section Power */
 
 #section_power_img {
-    background: url(./Images/full-image.jpg) no-repeat center/ cover;
+    background: url(./Images/full-image.jpg) no-repeat left/ cover;
     height: 70vh;
     width: 100%;
 }
@@ -322,4 +335,62 @@ p {
 footer {
     height: 60vh;
     background-color: #182432;
+}
+
+footer .footer_touch {
+    width:90%;
+    padding-left: 10%;
+    padding-top: 15%;
+    padding-bottom: 2%;
+    color: #fff;
+}
+
+footer .footer_touch h2{
+    font-size: 12px;
+}
+
+footer .footer_touch p {
+    font-size: 9px;
+}
+
+footer .touch_form {
+    width: 90%;
+    padding-left: 10%;
+    font-size: 10px;
+    color:  #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .touch_form .touch_form_box {
+    border: none;
+}
+
+footer .touch_form p {
+    padding-top: 2%;
+    font-size: 7px;
+    color: #56646d;
+}
+
+footer .footer_list {
+    padding-left: 10%;
+    padding-top: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer .footer_list h2 {
+    font-size: 10px;
+    padding-bottom: 10%;
+}
+
+footer .footer_list ul {
+    font-size: 9px;
+}
+
+footer .footer_list ul li {
+    list-style: none;
 }
