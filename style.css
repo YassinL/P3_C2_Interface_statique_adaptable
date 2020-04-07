@@ -23,10 +23,14 @@ body {
     font-family: "Open Sans";
 }
 
-
 header {
     background: url(./Images/mastehead.jpg) no-repeat center/ cover;
     height: 70vh;
+    background-color: palegreen;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header nav .nav_logtake {
@@ -34,25 +38,20 @@ header nav .nav_logtake {
     padding-left: 10px;
     padding-top: 5px;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: row;    
 }
 
 header nav h2 {
     font-style: italic;
     font-size: 15px;
-    padding-left: 5px;
-
+    margin-left: 5px;
+    padding: 0;
 }
 
 header .page_accueil_titre {
-    height: 80vh;
-    width: 60vw;
     padding-left: 10%;
-    padding-bottom: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    padding-bottom: 30%;
+    width: 50%;
 }
 
 header .page_accueil_titre h1{
@@ -65,16 +64,13 @@ header .page_accueil_titre h2 {
     font-size: 10px;
 }
 
-
 /* Main section */
 #main_section {
-    height: 220vh;
     width: 100%;
     background-color:  #fff;
 }
 
 #main_section .main_section_description .main_section_description_start{
-    height: 50vh;
     width: 100%;
     padding-top: 15%;
     padding-right: 10%;
@@ -96,52 +92,55 @@ header .page_accueil_titre h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    padding: 10%;
 }
 
 #main_section .main_section_description .main_section_description_design {
-    height: 17vh;
-    width: 85%;
+    padding: 7%;
     background-color:#F3989F;
+    color: #fff;
 }
 
 #main_section .main_section_description .main_section_description_built {
-    height: 17vh;
-    width: 85%;
+    padding: 7%;
     background-color:#5F5F80;
+    color: #fff;
 }
 
 #main_section .main_section_description .main_section_description_clients {
-    height: 17vh;
-    width: 85%;
+    padding: 7%;
     background: url(./Images/box-bg.jpg) no-repeat center/ cover;
     background-color: rosybrown;
+    color: #fff;
 }
 
 #main_section .main_section_description .main_section_description_signup {
-    height: 17vh;
-    width: 85%;
+    padding: 7%;
     background: url(./Images/box-bg-lg.jpg) no-repeat center/ cover;
     background-color: coral;
+    color: #fff;
 }
 
 #main_section .main_section_description .main_section_description_pictures {
-    height: 17vh;
-    width: 85%;
+    padding: 7%;
     background-color: #82C99E;
+    color: #fff;
 }
 
-#main_section .main_section_description .main_section_description_end{
-    height: 40vh;
-    width: 100%;
+.main_section_description_design a,
+.main_section_description_built a,
+.main_section_description_clients a,
+.main_section_description_signup a,
+.main_section_description_pictures a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-family: "Open Sans bold";
 }
 
-/*  */
+/* Look at the details section */
 #main_section .main_section_description .main_section_description_end {
-    height: 40vh;
-    width: 100%;
-    padding: 15% 10% 5% 10%;
-    background-color:  #fff;
+    padding: 5%;
 }
 
 #main_section .main_section_description .main_section_description_end h2 {
@@ -163,22 +162,18 @@ header .page_accueil_titre h2 {
 
 #section_power_img {
     background: url(./Images/full-image.jpg) no-repeat left/ cover;
-    height: 70vh;
     width: 100%;
+    height: 70vh;
 }
 
 #section_power_img .section_power_img_option {
-    width: 90vw;
-    height: 70vh;
-    padding-left: 10%;
-    padding-top: 30%;
-    color:  #fff;
-    display: flex;
-    flex-direction: column;    
+    padding: 10%;
+    padding-top: 20%;
+    color:  #fff;        
 }
 
 #section_power_img .section_power_img_option h2 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #section_power_img .section_power_img_option p {
@@ -203,23 +198,20 @@ header .page_accueil_titre h2 {
 
 /* Section Reasons */
 #section_reasons {
-    height: 70vh;
     background-color:#84c99d;
+    padding-bottom: 10%;
+    font-family: "Open Sans bold";
 }
 
 #section_reasons .section_reasons_description {
-    width: 90vw;
-    height: 70vh;
-    padding-left: 10%;
-    padding-top: 15%;
+    padding: 10%;
     color:  #fff;
     display: flex;
     flex-direction: column;
-    
 }
 
 #section_reasons .section_reasons_description h2{
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     font-size: 20px;
 }
 
@@ -235,7 +227,6 @@ header .page_accueil_titre h2 {
 
 /* Section buy  */
 #section_buy {
-    height: 70vh;
     background-color: #F4F8FB;
     display: flex;
     justify-content: space-between;
@@ -333,7 +324,7 @@ p {
 
 /* Footer */
 footer {
-    height: 60vh;
+    
     background-color: #182432;
 }
 
@@ -373,8 +364,7 @@ footer .touch_form p {
 }
 
 footer .footer_list {
-    padding-left: 10%;
-    padding-top: 5%;
+    padding: 10%;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -393,4 +383,66 @@ footer .footer_list ul {
 
 footer .footer_list ul li {
     list-style: none;
+}
+
+/* media queries Tablette */
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+/* Main section */
+ #main_section .main_section_description .main_section_description_start .main_section_description_start_paragraphe {
+     display: flex;    
+}   
+
+/* Section box  */
+
+#main_section .main_section_description .main_section_description_services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#main_section .main_section_description .main_section_description_services
+.main_section_description_design,
+.main_section_description_built,
+.main_section_description_clients,
+.main_section_description_signup {
+    width: 50%;
+}
+
+.main_section_description_pictures {
+    width: 100%;
+}
+
+.main_section_description_end_paragraphe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_section_description_end_paragraphe
+.main_section_description_end_paragraphe_web,
+.main_section_description_end_paragraphe_performance,
+.main_section_description_end_paragraphe_cultural,
+.main_section_description_end_paragraphe_sustainability {
+    width: 50%;
+    padding: 2%;    
+}
+
+/* Sections reasons */
+.section_reasons_description_paragraphe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section_reasons_description 
+.section_reasons_description_paragraphe
+.section_reasons_description_paragraphe_web,
+.section_reasons_description_paragraphe_team,
+.section_reasons_description_paragraphe_support {
+    width: 33%;
+}
+
 }
