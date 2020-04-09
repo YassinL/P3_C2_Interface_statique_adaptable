@@ -64,6 +64,12 @@ header .page_accueil_titre h2 {
     font-size: 10px;
 }
 
+.iphone {
+    display: none;
+    position: absolute;
+    
+}
+
 /* Main section */
 #main_section {
     width: 100%;
@@ -260,7 +266,7 @@ p {
 }
 
 #section_buy .section_buy_solo .section_buy_solo_legacy {
-    border: 0;
+    border: none;
     line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;
@@ -268,10 +274,9 @@ p {
     color: #fff;
     border-radius: 7px;
     background-color: #e2e1e4;
-    font-size: 12px;    
+    font-size: 12px;
+    cursor: pointer;  
 }
-
-
 
 #section_buy .section_buy_solo .section_buy_solo_9 {
     border: 0;
@@ -282,7 +287,8 @@ p {
     color: #fff;
     border-radius: 7px;
     background-color: #7ecc9a;
-    font-size: 12px;  
+    font-size: 12px;
+    cursor: pointer;  
 }
 
 #section_buy .section_buy_team .section_buy_team_popular {
@@ -294,7 +300,8 @@ p {
     color: #fff;
     border-radius: 7px;
     background-color: #bc8dc1;
-    font-size: 12px; 
+    font-size: 12px;
+    cursor: pointer; 
 }
 
 #section_buy .section_buy_team .section_buy_team_18 {
@@ -306,7 +313,8 @@ p {
     color: #fff;
     border-radius: 7px;
     background-color: #7ecc9a;
-    font-size: 12px; 
+    font-size: 12px;
+    cursor: pointer; 
 }
 
 #section_buy,
@@ -356,6 +364,12 @@ footer .touch_form {
 footer .touch_form .touch_form_box {
     border: none;
 }
+footer .touch_form .touch_form_img {
+    width: 20px;
+    height: 20px;
+    fill: #78cc9b;
+    
+}
 
 footer .touch_form p {
     padding-top: 2%;
@@ -364,7 +378,7 @@ footer .touch_form p {
 }
 
 footer .footer_list {
-    padding: 10%;
+    padding: 2% 10% 10% 10%;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -391,9 +405,17 @@ footer .footer_list ul li {
 {
 /* Main section */
  #main_section .main_section_description .main_section_description_start .main_section_description_start_paragraphe {
-     display: flex;    
+     display: flex;
+     justify-content: space-between;    
 }   
 
+.main_section_description_start_paragraphe_1 {
+    width: 50%;
+}
+
+.main_section_description_start_paragraphe2 {
+    width: 40%;
+}
 /* Section box  */
 
 #main_section .main_section_description .main_section_description_services {
@@ -429,12 +451,26 @@ footer .footer_list ul li {
     width: 50%;
     padding: 2%;    
 }
+/* SECTION POWER */
 
-/* Sections reasons */
+#section_power_img {
+    height: 60vh;
+}
+
+#section_power_img .section_power_img_option {
+    width: 50%;
+}
+
+#section_power_img .section_power_img_option h2 {
+    font-size: 40px;
+}
+
+/* SECTIONS REASONS */
 .section_reasons_description_paragraphe {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .section_reasons_description 
@@ -442,7 +478,127 @@ footer .footer_list ul li {
 .section_reasons_description_paragraphe_web,
 .section_reasons_description_paragraphe_team,
 .section_reasons_description_paragraphe_support {
+    width: 25%;
+}
+
+/* SECTIONS BUYS */
+#section_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.section_buy_team {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.section_buy_solo {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* SECTIONS FOOTER */
+.touch_form_box {
+    width: 90%;
+    height: 3vh;
+}
+footer .footer_list {
+    padding-bottom: 15%;
+}
+
+footer .touch_form .touch_form_img {
+    height: 30px;
+    width: 30px;
+}
+
+}
+
+
+/* FORMAT DESKTOP */
+@media (min-width: 1281px) {
+
+/* HEADER */
+header {
+    height: 100vh;
+}
+
+header .page_accueil_titre {
+    padding-left: 22%;
+    padding-bottom: 17%;
+    width: 50%;
+}
+
+.iphone {
+    display: inline-block;
+    top: 150px;
+    left: 750px;
+}
+
+/* MAIN SECTION */
+
+#main_section {
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+#main_section .main_section_description .main_section_description_start .main_section_description_start_paragraphe {
+    display: flex;
+    justify-content: space-between;    
+}   
+
+.main_section_description_start_paragraphe_1 {
+   width: 50%;
+}
+
+.main_section_description_start_paragraphe2 {
+   width: 40%;
+}
+
+
+#main_section .main_section_description .main_section_description_services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#main_section .main_section_description .main_section_description_services
+.main_section_description_design,
+.main_section_description_built,
+.main_section_description_clients,
+.main_section_description_pictures {
     width: 33%;
 }
+
+#main_section .main_section_description .main_section_description_services .main_section_description_signup {
+    width: 66%;
+}
+
+#main_section .main_section_description .main_section_description_end {
+    padding-left: 10%;
+}
+
+.main_section_description_end_paragraphe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.main_section_description_end_paragraphe
+.main_section_description_end_paragraphe_web,
+.main_section_description_end_paragraphe_performance,
+.main_section_description_end_paragraphe_cultural,
+.main_section_description_end_paragraphe_sustainability {
+    width: 50%;
+    padding-right: 4%;   
+}
+
+#main_section .main_section_description .main_section_description_end p {
+    font-size: 10px;
+}
+
+
+
 
 }
