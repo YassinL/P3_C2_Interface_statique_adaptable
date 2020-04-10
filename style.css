@@ -25,7 +25,7 @@ body {
 
 header {
     background: url(./Images/mastehead.jpg) no-repeat center/ cover;
-    height: 70vh;
+    height: 100%;
     background-color: palegreen;
     display: flex;
     justify-content: flex-end;
@@ -72,6 +72,7 @@ header .page_accueil_titre h2 {
 
 /* Main section */
 #main_section {
+    height: 100%;
     width: 100%;
     background-color:  #fff;
 }
@@ -98,7 +99,7 @@ header .page_accueil_titre h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 10%;
+    padding: 10% 10% 0% 10%;
 }
 
 #main_section .main_section_description .main_section_description_design {
@@ -169,7 +170,7 @@ header .page_accueil_titre h2 {
 #section_power_img {
     background: url(./Images/full-image.jpg) no-repeat left/ cover;
     width: 100%;
-    height: 70vh;
+    height: 100%;
 }
 
 #section_power_img .section_power_img_option {
@@ -207,6 +208,7 @@ header .page_accueil_titre h2 {
     background-color:#84c99d;
     padding-bottom: 10%;
     font-family: "Open Sans bold";
+    height: 100%;
 }
 
 #section_reasons .section_reasons_description {
@@ -238,14 +240,15 @@ header .page_accueil_titre h2 {
     justify-content: space-between;
     flex-direction: column;
     padding-left: 10%;
+    height: 100%;
 }
 
 #section_buy .section_buy_solo {
-    width: 90%;
+    padding-right: 10%;
 }
 
 #section_buy .section_buy_team {
-    width: 90%;
+    padding-right: 10%;
 }
 
 #section_buy,
@@ -332,15 +335,13 @@ p {
 
 /* Footer */
 footer {
-    
+    height: 100%;
     background-color: #182432;
 }
 
 footer .footer_touch {
-    width:90%;
     padding-left: 10%;
-    padding-top: 15%;
-    padding-bottom: 2%;
+    padding-right: 10%;
     color: #fff;
 }
 
@@ -352,37 +353,51 @@ footer .footer_touch p {
     font-size: 9px;
 }
 
-footer .touch_form {
-    width: 90%;
-    padding-left: 10%;
-    font-size: 10px;
-    color:  #fff;
-    display: flex;
-    flex-direction: column;
-}
-
-footer .touch_form .touch_form_box {
-    border: none;
-}
-footer .touch_form .touch_form_img {
-    width: 20px;
-    height: 20px;
-    fill: #78cc9b;
+footer .mail-box{
     
+    padding-left: 10%;
+    color: #F4F8FB;
 }
 
-footer .touch_form p {
-    padding-top: 2%;
+footer .mail-box .case-email{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .mail-box .case-email .text-email{
+    height: 3vh;
+    width: 80%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: white;
+}
+
+footer .mail-box .case-email .validation-email{
+    height: 3vh;
+    width: 8%;
+    text-align: center;
+    text-decoration: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #84c99d;
+}
+footer .mail-box .case-email .validation-email:hover {
+    opacity:0.7;
+}
+footer .mail-box p{
     font-size: 7px;
-    color: #56646d;
+    color: #55616f;
+}
+
+.mail-box h4 {
+    font-size: 12px;
 }
 
 footer .footer_list {
-    padding: 2% 10% 10% 10%;
-    width: 90%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #fff;
 }
 
@@ -415,6 +430,10 @@ footer .footer_list ul li {
 
 .main_section_description_start_paragraphe2 {
     width: 40%;
+}
+
+.iphone {
+    display: none;
 }
 /* Section box  */
 
@@ -591,14 +610,148 @@ header .page_accueil_titre {
 .main_section_description_end_paragraphe_cultural,
 .main_section_description_end_paragraphe_sustainability {
     width: 50%;
-    padding-right: 4%;   
+    padding-right: 4%;
+    padding-bottom: 4%;   
 }
 
 #main_section .main_section_description .main_section_description_end p {
     font-size: 10px;
 }
 
+/* POWER */
+#section_power_img {
+    height: 100vh;
+}
 
+#section_power_img .section_power_img_option {
+    width: 65%;
+    padding-left: 20% ;
+}
 
+#section_power_img .section_power_img_option h2 {
+    font-size: 50px;
+}
+
+/* SECTIONS REASONS */
+
+#section_reasons {
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+.section_reasons_description_paragraphe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section_reasons_description 
+.section_reasons_description_paragraphe
+.section_reasons_description_paragraphe_web,
+.section_reasons_description_paragraphe_team,
+.section_reasons_description_paragraphe_support {
+    width: 25%;
+}
+
+/* SECTIONS BUYS */
+#section_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10%;
+    height: 100%;
+}
+
+.section_buy_solo {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 40%;
+}
+
+.section_buy_solo:hover {
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+}
+
+.section_buy_team {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 40%;
+}
+
+.section_buy_team:hover {
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+}
+
+/* SECTIONS FOOTER */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+footer .footer_touch {
+    width:50%;
+    padding-bottom: 2%;
+    color: #fff;
+}
+
+footer .footer_touch h2{
+    font-size: 12px;
+}
+
+footer .footer_touch p {
+    font-size: 9px;
+}
+
+footer .touch_form {
+    width: 50%;
+    padding-top: 15%;
+    font-size: 10px;
+    color:  #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-example {
+    height: 30vh;
+}
+
+footer .touch_form .touch_form_box {
+    border: none;
+    width: 60%;
+    height: 4vh;
+    padding: 0;
+}
+footer .touch_form .touch_form_img {
+    width: 20px;
+    height: 20px;
+    fill: #78cc9b;
+    
+}
+
+footer .touch_form p {
+    padding-top: 2%;
+    font-size: 7px;
+}
+
+footer .footer_list {
+    width: 50%;
+    display: flex;
+}
+
+footer .footer_list h2 {
+    font-size: 10px;
+    padding-bottom: 10%;
+}
 
 }
